@@ -175,7 +175,7 @@
                 .data(topojson.feature(uk, uk.objects.subunits).features)
                 .enter().append("path")
                 .attr("class", function(d) {
-                    return "subunit " + quantize(d.properties.d_1998_1);
+                    return "subunit " + quantize(d.properties.d_103_1);
                 })
                 .attr("d", path)
                 .on("mouseover", mouseover)
