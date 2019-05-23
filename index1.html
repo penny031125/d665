@@ -180,7 +180,7 @@
                 .attr("d", path)
                 .on("mouseover", mouseover)
                 .on("mouseout", mouseout);
-
+console.log('sss');
             svg.append("path")
                 .datum(topojson.mesh(uk, uk.objects.subunits, function(a, b) {
                     return a !== b;
