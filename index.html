@@ -175,7 +175,7 @@
                 .data(topojson.feature(uk, uk.objects.subunits).features)
                 .enter().append("path")
                 .attr("class", function(d) {
-                    return "subunit " + quantize(d.properties.d_1998_1);
+                    return "subunit " + quantize(d.properties.d_103_1);
                 })
                 .attr("d", path)
                 .on("mouseover", mouseover)
@@ -218,12 +218,12 @@
 
             dragBar.append("g")
                 .attr("class", "axis axis-top")
-                .call(d3.axisBottom(yearToX).tickValues(d3.range(1998, 2016, 2)));
+                .call(d3.axisBottom(yearToX).tickValues(d3.range(103, 107, 2)));
 
             dragBar.append("g")
                 .attr("class", "axis axis-down")
                 .attr("transform", "translate(0,-5)")
-                .call(d3.axisTop(yearToX).tickValues(d3.range(1999, 2016, 2)));
+                .call(d3.axisTop(yearToX).tickValues(d3.range(103, 107, 2)));
 
             dragBar.append("rect")
                 .attr("x", 0)
