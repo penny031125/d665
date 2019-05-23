@@ -169,7 +169,7 @@
 
         d3.json("test.json", function(error, uk) {
             if (error) return console.error(error);
-/*
+
             svg.append("g")
                 .selectAll("path")
                 .data(topojson.feature(uk, uk.objects.subunits).features)
@@ -187,7 +187,7 @@
                 }))
                 .attr("d", path)
                 .attr("class", "subunit-boundary");
-
+/*
             svg.append("path")
                 .datum(topojson.mesh(uk, uk.objects.subunits, function(a, b) {
                     return a === b;
