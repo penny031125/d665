@@ -299,7 +299,7 @@
                 .attr("height", 7)
                 .style("pointer-events", "none")
                 .style("opacity", 0);
-
+*/
 
             function dragstarted(d) {
                 d3.select(this).classed("active", true);
@@ -338,7 +338,7 @@
                 var target = "." + d.properties.C_Name;
                 d3.select(target).style("opacity", 0);
             }
-*/
+
             function click() {
                 if (!d3.select(".playButton").classed("play")) {
                     d3.select(".playButton").classed("play", true);
