@@ -239,7 +239,7 @@
                     .on("start", dragstarted)
                     .on("drag", dragged)
                     .on("end", dragended));
-*/
+
             var legend = svg.append("g")
                 .attr("class", "legend")
                 .attr("transform", "translate(" + (width - 300) + "," + (height  - 350) + ")")
@@ -338,7 +338,7 @@
                 var target = "." + d.properties.C_Name;
                 d3.select(target).style("opacity", 0);
             }
-
+*/
             function click() {
                 if (!d3.select(".playButton").classed("play")) {
                     d3.select(".playButton").classed("play", true);
