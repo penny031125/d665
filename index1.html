@@ -145,11 +145,11 @@
 
         var xToYear = d3.scaleOrdinal()
             .domain(d3.range(0, 540, 30))
-            .range(d3.range(103, 106));
+            .range(d3.range(103, 107));
 
         var yearToX = d3.scaleOrdinal()
             .range(d3.range(0, 540, 30))
-            .domain(d3.range(103, 106, 1));
+            .domain(d3.range(103, 107, 1));
 
         var legendY = d3.scaleLinear()
             .range([0, 225])
@@ -218,12 +218,12 @@
 
             dragBar.append("g")
                 .attr("class", "axis axis-top")
-                .call(d3.axisBottom(yearToX).tickValues(d3.range(103, 106, 2)));
+                .call(d3.axisBottom(yearToX).tickValues(d3.range(103, 107, 2)));
 
             dragBar.append("g")
                 .attr("class", "axis axis-down")
                 .attr("transform", "translate(0,-5)")
-                .call(d3.axisTop(yearToX).tickValues(d3.range(103, 106, 2)));
+                .call(d3.axisTop(yearToX).tickValues(d3.range(103, 107, 2)));
 
             dragBar.append("rect")
                 .attr("x", 0)
